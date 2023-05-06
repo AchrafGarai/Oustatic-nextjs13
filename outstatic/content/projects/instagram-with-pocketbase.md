@@ -1,6 +1,6 @@
 ---
 title: 'Instagram with pocketbase'
-status: 'draft'
+status: 'published'
 author:
   name: ''
   picture: 'https://avatars.githubusercontent.com/u/32675431?v=4'
