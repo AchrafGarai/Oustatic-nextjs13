@@ -32,7 +32,7 @@ async function Projectpage({ params }: { params: { slug: string } }) {
   ]) as unknown as Project;
   const content = await markdownToHtml(project.content || "");
   return (
-    <div className=" flex flex-col gap-8 mt-20 mx-auto max-w-4xl">
+    <div className=" flex flex-col gap-8 mt-20 mx-auto max-w-3xl">
       <div className="flex">
         <Button href="/" variant="ghost">
           <Image
@@ -50,7 +50,7 @@ async function Projectpage({ params }: { params: { slug: string } }) {
             src={project.coverImage}
             alt={project.description}
             width={1200}
-            height={830}
+            height={1200}
           />
         </div>
       )}

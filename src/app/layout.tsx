@@ -4,7 +4,7 @@ import { Navbar, Footer } from "@/components";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Hey 👋 i`m Achraf this is my W🌍RLD",
+  title: "Achraf Garai Portfilio | this is my W🌍RLD",
   description:
     "Online protfolio example made with NextJS 13 and Outstatic, deployed on Vercel",
 };

@@ -12,8 +12,9 @@ export default async function Home() {
 
   return (
     <main className="p-8">
-      <Hero />
-      <div className="grid grid-cols-2 gap-16">
+      <Hero projects={allPosts} />
+
+      <div className="grid grid-cols-2 gap-8">
         {allPosts.map((project) => (
           <ProjectCard project={project} />
         ))}
