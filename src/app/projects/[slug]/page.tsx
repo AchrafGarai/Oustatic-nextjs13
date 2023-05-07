@@ -3,6 +3,7 @@ import React from "react";
 import { Project } from "@/types";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Image from "next/image";
+import { Button } from "@/components";
 // Return a list of `params` to populate the [slug] dynamic segment
 export async function generateStaticParams() {
   const allPosts = (await getDocuments("projects", [
@@ -31,18 +32,29 @@ async function Projectpage({ params }: { params: { slug: string } }) {
   ]) as unknown as Project;
   const content = await markdownToHtml(project.content || "");
   return (
-    <div className="flex flex-col p-24 gap-8 mx-auto max-w-4xl">
+    <div className=" flex flex-col gap-8 mt-20 mx-auto max-w-4xl">
+      <div className="flex">
+        <Button href="/" variant="ghost">
+          <Image
+            src="/icons/Back.svg"
+            alt={project.description}
+            width={24}
+            height={24}
+          />
+          Back
+        </Button>
+      </div>
       {project.coverImage !== "" && (
-        <div className="w-full relative h-screen">
+        <div className="w-full">
           <Image
             src={project.coverImage}
             alt={project.description}
-            fill
-            className=" object-contain"
+            width={1200}
+            height={830}
           />
         </div>
       )}
-      <h1 className=" text-6xl font-bold">{project.title}</h1>
+      <h1 className="text-6xl font-bold">{project.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );

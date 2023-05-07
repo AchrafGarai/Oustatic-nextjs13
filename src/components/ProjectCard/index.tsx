@@ -4,9 +4,13 @@ import React from "react";
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <Link href={`projects/${project.slug}`}>
-      <div className="p-4 bg-zinc-900 rounded-2xl w-full h-60">
-        {project.title}
+    <Link
+      href={`projects/${project.slug}`}
+      className="bg-zinc-900 rounded-2xl w-full p-16 pt-96"
+    >
+      <div>
+        <h2 className=" text-5xl">{project.title}</h2>
+        <p>{project.description}</p>
       </div>
     </Link>
   );
