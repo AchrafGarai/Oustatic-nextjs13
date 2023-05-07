@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+h2 {
+  @apply text-3xl my-8 font-semibold;
+}
+
+blockquote {
+  @apply italic my-4 p-4 border-l;
+}

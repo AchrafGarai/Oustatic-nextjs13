@@ -3,7 +3,7 @@ export type Author = {
   picture: string;
 };
 
-export type Document = {
+export type Project = {
   slug: string;
   title: string;
   publishedAt: string;
