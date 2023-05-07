@@ -2,17 +2,25 @@ import { Project } from "@/types";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import s from "./ProjectCard.module.css";
 import cn from "clsx";
+import s from "./ProjectCard.module.css";
+import { CARD_COLORS } from "@/consts";
 
 function ProjectCard({ project }: { project: Project }) {
+  const randomIndex = Math.floor(Math.random() * CARD_COLORS.length);
+  const randomColor = CARD_COLORS[randomIndex];
+  const dynamicStyles = {
+    backgroundColor: randomColor.value,
+  };
+
   return (
     <Link
       href={`projects/${project.slug}`}
-      className="bg-zinc-900 rounded-2xl w-full h-[600px] border border-zinc-800 relative overflow-hidden"
+      className={cn(s.root)}
+      style={dynamicStyles}
     >
-      <div className="p-4 w-full h-full">
-        <div className="relative w-full h-full ">
+      <div className={cn(s.imageOuterWrapper)}>
+        <div className={cn(s.imageInnerWrapper)}>
           <Image
             src={project.coverImage}
             fill
@@ -21,8 +29,7 @@ function ProjectCard({ project }: { project: Project }) {
           />
         </div>
       </div>
-
-      <div className="bg-black bg-opacity-80 absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end p-10 py-20 opacity-0 hover:opacity-100 transition-all">
+      <div className={cn(s.cardInfo)}>
         <h2 className="text-5xl">{project.title}</h2>
         <p>{project.description}</p>
       </div>

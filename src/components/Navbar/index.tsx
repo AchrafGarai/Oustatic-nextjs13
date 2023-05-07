@@ -8,9 +8,7 @@ function Navbar() {
       <span className="flex flex-grow">
         <Link href="/">Achraf Garai</Link>
       </span>
-      <Button href="/" variant="yellow">
-        Contact me
-      </Button>
+      <Button href="/">Get in touch</Button>
     </div>
   );
 }

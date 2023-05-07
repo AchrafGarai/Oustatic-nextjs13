@@ -32,7 +32,7 @@ async function Projectpage({ params }: { params: { slug: string } }) {
   ]) as unknown as Project;
   const content = await markdownToHtml(project.content || "");
   return (
-    <div className=" flex flex-col gap-8 mt-20 mx-auto max-w-3xl">
+    <div className=" flex flex-col gap-16 mt-20 mx-auto max-w-3xl">
       <div className="flex">
         <Button href="/" variant="ghost">
           <Image
@@ -44,6 +44,7 @@ async function Projectpage({ params }: { params: { slug: string } }) {
           Back
         </Button>
       </div>
+      <h1 className="text-6xl font-bold text-center">{project.title}</h1>
       {project.coverImage !== "" && (
         <div className="w-full">
           <Image
@@ -54,7 +55,6 @@ async function Projectpage({ params }: { params: { slug: string } }) {
           />
         </div>
       )}
-      <h1 className="text-6xl font-bold">{project.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );

@@ -1,5 +1,5 @@
 ---
-title: " 🧸 Bearbnb"
+title: "Bearbnb 🧸"
 status: "published"
 author:
   name: "Andre Vitorio"
