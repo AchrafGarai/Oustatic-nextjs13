@@ -1,0 +1,19 @@
+.root {
+  @apply p-3 flex flex-row items-center justify-center gap-2 rounded-full text-sm bg-slate-50 text-gray-800;
+  transition: all ease-out 100ms;
+}
+
+.root:focus {
+  @apply outline outline-2 outline-offset-2;
+}
+
+.ghost {
+  @apply border-0;
+}
+
+.ghost:hover {
+}
+
+.yellow {
+  @apply bg-bg-primary;
+}

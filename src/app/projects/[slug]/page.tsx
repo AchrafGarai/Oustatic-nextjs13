@@ -31,7 +31,7 @@ async function Projectpage({ params }: { params: { slug: string } }) {
   ]) as unknown as Project;
   const content = await markdownToHtml(project.content || "");
   return (
-    <div className="flex flex-col p-24 gap-8">
+    <div className="flex flex-col p-24 gap-8 mx-auto max-w-4xl">
       {project.coverImage !== "" && (
         <div className="w-full relative h-screen">
           <Image

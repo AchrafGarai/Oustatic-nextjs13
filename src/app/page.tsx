@@ -1,6 +1,6 @@
 import { getDocuments } from "outstatic/server";
 import { Project } from "@/types";
-import { ProjectCard } from "@/components";
+import { Hero, ProjectCard } from "@/components";
 export default async function Home() {
   const allPosts = getDocuments("projects", [
     "title",
@@ -11,12 +11,13 @@ export default async function Home() {
   ]) as unknown as Project[];
 
   return (
-    <main className="flex flex-col items-center justify-between p-24">
-      <>
+    <main className="p-8">
+      <Hero />
+      <div className="grid grid-cols-2 gap-6">
         {allPosts.map((project) => (
           <ProjectCard project={project} />
         ))}
-      </>
+      </div>
     </main>
   );
 }
