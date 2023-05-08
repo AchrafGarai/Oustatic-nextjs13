@@ -11,3 +11,13 @@ All you need is to deploy to Vercel and you will get access to your Outstatic da
 npm run dev
 
 ```
+
+## About me
+
+My name is Achraf 👋😃, I am product designer and developer and I love building apps and websites 🚀. You can find me on the following links. I would love to connect and get to know amazing developers and designers. Feel free to reach out to me for any questions or recommendations.
+
+- [Instagram](https://www.instagram.com/achraf_garai/)
+
+- [LinkedIn](https://www.linkedin.com/in/achraf-garai/)
+
+- [Personal blog](https://www.achrafgarai.com/)
