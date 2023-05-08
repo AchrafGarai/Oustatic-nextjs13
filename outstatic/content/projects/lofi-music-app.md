@@ -6,7 +6,7 @@ author:
   picture: ""
 slug: "lofi-music-app"
 description: "Process of building a lofi music app with Next.js from design to deployment"
-coverImage: "/images/lofi-app-music.webp"
+coverImage: "/images/Spotify-music-app"
 publishedAt: "2022-03-17T05:35:07.322Z"
 ---
 
