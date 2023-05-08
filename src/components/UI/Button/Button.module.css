@@ -1,5 +1,5 @@
 .root {
-  @apply p-3 flex flex-row items-center justify-center gap-2 rounded-full text-sm bg-slate-50 text-gray-800 flex-shrink;
+  @apply p-3 px-4 flex flex-row items-center justify-center gap-2 rounded-full font-medium bg-slate-50 text-gray-800 flex-shrink;
   transition: all ease-out 100ms;
 }
 

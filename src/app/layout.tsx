@@ -1,7 +1,6 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
-import { Navbar, Footer } from "@/components";
-const inter = Inter({ subsets: ["latin"] });
+import { Navbar, Footer, HeroGraphics } from "@/components";
+import { inter, DrukWide } from "./fonts";
 
 export const metadata = {
   title: "Achraf Garai Portfilio | this is my W🌍RLD",
@@ -17,9 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        <div className="mx-auto max-w-7xl">{children}</div>
-        <Footer />
+        <div className="relative overflow-hidden">
+          <Navbar />
+          <div className="mx-auto max-w-7xl">{children}</div>
+          <Footer />
+          <HeroGraphics />
+        </div>
       </body>
     </html>
   );

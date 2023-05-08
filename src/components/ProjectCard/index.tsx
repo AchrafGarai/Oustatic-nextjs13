@@ -5,6 +5,7 @@ import Image from "next/image";
 import cn from "clsx";
 import s from "./ProjectCard.module.css";
 import { CARD_COLORS } from "@/consts";
+import { DrukWide } from "@/app/fonts";
 
 function ProjectCard({ project }: { project: Project }) {
   const randomIndex = Math.floor(Math.random() * CARD_COLORS.length);
@@ -30,7 +31,9 @@ function ProjectCard({ project }: { project: Project }) {
         </div>
       </div>
       <div className={cn(s.cardInfo)}>
-        <h2 className="text-5xl">{project.title}</h2>
+        <h2 className="text-5xl" style={DrukWide.style}>
+          {project.title}
+        </h2>
         <p>{project.description}</p>
       </div>
     </Link>

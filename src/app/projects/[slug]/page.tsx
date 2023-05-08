@@ -4,6 +4,7 @@ import { Project } from "@/types";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Image from "next/image";
 import { Button } from "@/components";
+import { DrukWide } from "@/app/fonts";
 // Return a list of `params` to populate the [slug] dynamic segment
 export async function generateStaticParams() {
   const allPosts = (await getDocuments("projects", [
@@ -44,7 +45,7 @@ async function Projectpage({ params }: { params: { slug: string } }) {
           Back
         </Button>
       </div>
-      <h1 className="text-6xl font-bold text-center">{project.title}</h1>
+
       {project.coverImage !== "" && (
         <div className="w-full">
           <Image
@@ -55,6 +56,9 @@ async function Projectpage({ params }: { params: { slug: string } }) {
           />
         </div>
       )}
+      <h1 className="text-6xl font-bold text-center" style={DrukWide.style}>
+        {project.title}
+      </h1>
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );

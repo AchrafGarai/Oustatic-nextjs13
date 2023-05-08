@@ -1,0 +1,7 @@
+.root {
+  @apply mb-48;
+}
+
+.container {
+  @apply flex flex-col gap-4 items-center mx-auto my-24 uppercase text-center max-w-4xl  mb-24;
+}
