@@ -10,12 +10,24 @@ coverImage: "/images/Instagram-reels.webp"
 publishedAt: "2023-05-06T21:23:19.496Z"
 ---
 
-Lorem ipsum dolor sit amet consectetur. Bibendum faucibus et scelerisque tristique ut nec at sem in. Nunc aliquet adipiscing odio morbi enim in diam. Non congue iaculis vestibulum neque at elementum. Odio erat in pellentesque ac suspendisse sodales morbi. Purus et leo vestibulum sit mi pretium vitae id rhoncus. Etiam tristique nisl volutpat luctus commodo maecenas. Gravida tellus auctor quis vestibulum. Ut amet faucibus ac dui sed donec. Etiam vehicula habitant phasellus metus facilisi aliquet. In etiam quam lectus mauris.<br>
+## Introduction
 
-Sed porta sed congue amet. Vel metus egestas at scelerisque. Eget in cras et amet volutpat sodales et eget libero. Sed scelerisque nunc pellentesque ut ante eget nisl ut amet. Nascetur morbi viverra aliquet donec mi tempor et. Tempor sed id porta malesuada senectus. Suspendisse et felis in egestas ut iaculis. Ornare mi volutpat commodo vitae urna quis sit tincidunt. Sed at a malesuada imperdiet elementum vitae pellentesque. Congue elit ultricies integer eget aliquam sit commodo. Tortor condimentum diam arcu amet dictum ullamcorper netus. Ut molestie neque blandit volutpat eleifend blandit. Sodales sed nec eleifend id in volutpat.<br>
+As a developer, I had the opportunity to undertake an exciting portfolio project where I designed and developed an Instagram clone using Next.js. The project aimed to replicate the core features and functionality of the popular social media platform, allowing users to share photos, follow other users, and engage with their posts.
 
-Donec tincidunt lectus sit ac viverra. Aenean ut sapien magna risus interdum praesent in. Elit vitae molestie urna viverra. Volutpat sit lobortis nibh pulvinar dictumst convallis leo faucibus. Ultricies morbi placerat nulla enim non facilisi amet a venenatis. A varius eu phasellus velit feugiat turpis non elit. Quis mattis ut faucibus tortor libero ac. Fermentum eget gravida ut ornare varius. Cras praesent id elit id. Pellentesque enim non placerat consequat vivamus elit proin non.
+## Planning the app
 
-## Heading test
+During the initial stages, I meticulously planned the project's structure and defined the key components required for its implementation. Leveraging the power of Next.js, I set up a robust development environment, taking advantage of its server-side rendering capabilities and seamless routing system.
 
-![](https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80> "an-image-title")
+To create a visually appealing user interface, I utilized modern CSS techniques and frameworks like Tailwind CSS. This allowed me to rapidly prototype and style the components, ensuring a responsive and intuitive design that closely resembled the original Instagram platform.
+
+Implementing the core functionalities required careful consideration and attention to detail. I integrated user authentication and authorization, allowing users to sign up, log in, and securely access their personalized accounts. Utilizing Next.js API routes, I developed endpoints to handle photo uploads, post creation, and interactions such as liking and commenting.
+
+To ensure efficient data management, I integrated a database solution, such as MongoDB, to store user profiles, posts, and engagement metrics. Leveraging the power of Next.js's built-in API routes, I designed and implemented a robust backend system that facilitated seamless communication between the front-end and the database.
+
+Furthermore, I implemented real-time updates using technologies such as WebSockets, enabling users to receive instant notifications about new comments, likes, and followers. This feature enhanced the overall user experience, providing a sense of interactivity and engagement.
+
+Throughout the development process, I followed best practices and conducted rigorous testing to ensure the application's stability and performance. I conducted both unit tests and user testing, incorporating feedback and making iterative improvements to enhance the overall functionality and user experience of the Instagram clone.
+
+## Conclusion
+
+In conclusion, developing the Instagram clone with Next.js was an enriching experience that showcased my skills in front-end development, backend integration, and database management. This project allowed me to deepen my understanding of modern web development technologies and frameworks, while also demonstrating my ability to create scalable and feature-rich applications. I am proud to include this project in my portfolio as it represents my passion for building user-centric and visually appealing web applications.

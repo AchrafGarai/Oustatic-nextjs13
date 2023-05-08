@@ -11,5 +11,5 @@
 }
 
 .heading {
-  @apply text-7xl font-semibold;
+  @apply text-5xl font-semibold uppercase md:text-7xl;
 }
