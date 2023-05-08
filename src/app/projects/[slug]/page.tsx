@@ -56,6 +56,7 @@ async function Projectpage({ params }: { params: { slug: string } }) {
             alt={project.description}
             width={1200}
             height={1200}
+            key={project.slug}
           />
         </div>
       )}

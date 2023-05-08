@@ -44,7 +44,7 @@ function Slider({ projects }: { projects: Project[] }) {
     <>
       <div ref={sliderRef} className="keen-slider">
         {projects.map((project) => (
-          <div className="keen-slider__slide">
+          <div className="keen-slider__slide" key={project.slug}>
             <Image
               src={project.coverImage}
               alt={project.title}

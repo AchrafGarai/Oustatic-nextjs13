@@ -18,7 +18,11 @@ export default async function Home() {
       <Hero projects={allPosts} />
       <div className={cn(s.root)}>
         {allPosts.map((project) => (
-          <ProjectCard project={project} className={cn(s.gridItem)} />
+          <ProjectCard
+            project={project}
+            className={cn(s.gridItem)}
+            key={project.slug}
+          />
         ))}
       </div>
     </main>
