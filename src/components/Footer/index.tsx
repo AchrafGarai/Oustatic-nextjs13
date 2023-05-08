@@ -2,24 +2,29 @@ import React from "react";
 import Image from "next/image";
 import { DrukWide } from "@/app/fonts";
 import Button from "../UI/Button";
+import s from "./Footer.module.css";
+import cn from "clsx";
+
 function Footer() {
   return (
     <>
-      <div className="p-4 flex gap-4 justify-center mt-24 h-screen relative">
+      <div className={cn(s.root)}>
         <Image
           src={"/graphics/Footer-bg.svg"}
           alt=""
           fill
-          className=" object-cover -z-10"
+          className={cn(s.background)}
         />
         <>
-          <div
-            className="flex flex-col gap-6 items-center mx-auto my-24 uppercase text-center mb-24 top-0"
-            style={DrukWide.style}
-          >
-            <p>Welcome to my world</p>
-            <h1 className="text-7xl font-semibold">Get in touch 👋</h1>
-            <Button href="" variant="yellow">
+          <div className={cn(s.footerDetails)}>
+            <h1 className={cn(s.heading)} style={DrukWide.style}>
+              Get in touch 👋
+            </h1>
+            <p style={DrukWide.style}>Would love to hear from you.</p>
+            <Button
+              href="mailto:achrafgarai@hotmail.com?subject=Hello&body=Just wanted to say hi!"
+              variant="yellow"
+            >
               Contact Me
             </Button>
           </div>

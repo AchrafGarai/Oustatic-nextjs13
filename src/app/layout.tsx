@@ -6,6 +6,9 @@ export const metadata = {
   title: "Achraf Garai Portfilio | this is my W🌍RLD",
   description:
     "Online protfolio example made with NextJS 13 and Outstatic, deployed on Vercel",
+  openGraph: {
+    images: "/graphics/og_image.webp",
+  },
 };
 
 export default function RootLayout({

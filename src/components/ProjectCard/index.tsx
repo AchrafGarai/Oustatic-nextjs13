@@ -7,7 +7,13 @@ import s from "./ProjectCard.module.css";
 import { CARD_COLORS } from "@/consts";
 import { DrukWide } from "@/app/fonts";
 
-function ProjectCard({ project }: { project: Project }) {
+function ProjectCard({
+  project,
+  className,
+}: {
+  project: Project;
+  className?: string;
+}) {
   const randomIndex = Math.floor(Math.random() * CARD_COLORS.length);
   const randomColor = CARD_COLORS[randomIndex];
   const dynamicStyles = {
@@ -17,7 +23,7 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
       href={`projects/${project.slug}`}
-      className={cn(s.root)}
+      className={cn(s.root, className)}
       style={dynamicStyles}
     >
       <div className={cn(s.imageOuterWrapper)}>

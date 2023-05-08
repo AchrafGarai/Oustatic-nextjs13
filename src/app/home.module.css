@@ -1,0 +1,11 @@
+.root {
+  @apply grid grid-cols-2 gap-8;
+}
+
+.gridItem {
+  grid-column: span 1;
+}
+
+.gridItem:nth-child(2n + 3) {
+  grid-column: span 2;
+}

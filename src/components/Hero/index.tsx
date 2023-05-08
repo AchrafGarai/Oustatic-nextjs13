@@ -9,11 +9,13 @@ import cn from "clsx";
 function Hero({ projects }: { projects: Project[] }) {
   return (
     <div className={cn(s.root)}>
-      <div className={cn(s.container)} style={DrukWide.style}>
-        <p>Welcome to my world</p>
-        <h1 className="text-7xl font-semibold">
+      <div className={cn(s.container)}>
+        <h1 className={cn(s.heading)} style={DrukWide.style}>
           Hey👋 i`m Achraf this is my W🌍RLD
         </h1>
+        <p>
+          This is a free portfolio template made with NextJS 13 and Outstatic
+        </p>
       </div>
       <Slider projects={projects} />
     </div>

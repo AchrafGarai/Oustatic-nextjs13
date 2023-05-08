@@ -2,6 +2,7 @@ import React, { ButtonHTMLAttributes, forwardRef } from "react";
 import s from "./Button.module.css";
 import cn from "clsx";
 import Link from "next/link";
+import { DrukWide } from "@/app/fonts";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   href: string;

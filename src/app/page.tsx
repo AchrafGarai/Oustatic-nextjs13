@@ -1,6 +1,9 @@
 import { getDocuments } from "outstatic/server";
 import { Project } from "@/types";
 import { Hero, ProjectCard } from "@/components";
+import s from "./home.module.css";
+import cn from "clsx";
+
 export default async function Home() {
   const allPosts = getDocuments("projects", [
     "title",
@@ -13,10 +16,9 @@ export default async function Home() {
   return (
     <main className="p-8">
       <Hero projects={allPosts} />
-
-      <div className="grid grid-cols-2 gap-8">
+      <div className={cn(s.root)}>
         {allPosts.map((project) => (
-          <ProjectCard project={project} />
+          <ProjectCard project={project} className={cn(s.gridItem)} />
         ))}
       </div>
     </main>
