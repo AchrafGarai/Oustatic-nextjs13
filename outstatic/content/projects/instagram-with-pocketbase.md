@@ -1,13 +1,13 @@
 ---
-title: "Instagram with pocketbase"
-status: "published"
+title: 'Instagram with pocketbase'
+status: 'published'
 author:
-  name: ""
-  picture: "https://avatars.githubusercontent.com/u/32675431?v=4"
-slug: "instagram-with-pocketbase"
-description: "Instagram with pocket base"
-coverImage: "/images/Instagram-reels.webp"
-publishedAt: "2023-05-06T21:23:19.496Z"
+  name: ''
+  picture: 'https://avatars.githubusercontent.com/u/32675431?v=4'
+slug: 'instagram-with-pocketbase'
+description: 'Instagram with pocket base'
+coverImage: '/images/Instagram-reels.webp'
+publishedAt: '2023-05-06T21:23:19.496Z'
 ---
 
 ## Introduction
@@ -31,3 +31,4 @@ Throughout the development process, I followed best practices and conducted rigo
 ## Conclusion
 
 In conclusion, developing the Instagram clone with Next.js was an enriching experience that showcased my skills in front-end development, backend integration, and database management. This project allowed me to deepen my understanding of modern web development technologies and frameworks, while also demonstrating my ability to create scalable and feature-rich applications. I am proud to include this project in my portfolio as it represents my passion for building user-centric and visually appealing web applications.
+
