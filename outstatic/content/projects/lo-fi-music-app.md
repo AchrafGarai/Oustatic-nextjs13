@@ -1,6 +1,6 @@
 ---
 title: 'Lo-Fi Music app'
-status: 'draft'
+status: 'published'
 author:
   name: 'Achraf Garai'
   picture: 'https://avatars.githubusercontent.com/u/32675431?v=4'
