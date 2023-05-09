@@ -33,22 +33,21 @@ async function Projectpage({ params }: { params: { slug: string } }) {
   ]) as unknown as Project;
   const content = await markdownToHtml(project.content || "");
   return (
-    <div className=" flex flex-col gap-8 mt-20 mx-auto max-w-3xl">
-      <div className="flex">
-        <Button href="/" variant="ghost">
-          <Image
-            src="/icons/Back.svg"
-            alt={project.description}
-            width={24}
-            height={24}
-          />
-          Back
-        </Button>
+    <>
+      <div className="flex flex-col gap-8 mt-8">
+        <div className="flex my-8">
+          <Button href="/" variant="ghost">
+            <Image
+              src="/icons/Back.svg"
+              alt={project.description}
+              width={24}
+              height={24}
+            />
+            Back
+          </Button>
+        </div>
       </div>
-      <h1 className="text-6xl font-bold" style={DrukWide.style}>
-        {project.title}
-      </h1>
-      <p>{project.description}</p>
+
       {project.coverImage !== "" && (
         <div className="w-full">
           <Image
@@ -60,8 +59,14 @@ async function Projectpage({ params }: { params: { slug: string } }) {
           />
         </div>
       )}
-      <div dangerouslySetInnerHTML={{ __html: content }} />
-    </div>
+      <div className=" flex flex-col gap-8 mt-20 mx-auto max-w-3xl">
+        <h1 className="text-6xl font-bold mb-4" style={DrukWide.style}>
+          {project.title}
+        </h1>
+        <p>{project.description}</p>
+        <div dangerouslySetInnerHTML={{ __html: content }} />
+      </div>
+    </>
   );
 }
 
