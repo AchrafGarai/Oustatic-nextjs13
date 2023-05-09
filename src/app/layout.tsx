@@ -3,7 +3,7 @@ import { Navbar, Footer, HeroGraphics } from "@/components";
 import { inter, DrukWide } from "./fonts";
 
 export const metadata = {
-  title: "Achraf Garai Portfilio | this is my W🌍RLD",
+  title: "Achraf Garai Portfolio 🚀 | this is my W🌍RLD",
   description:
     "Online protfolio example made with NextJS 13 and Outstatic, deployed on Vercel",
   openGraph: {
