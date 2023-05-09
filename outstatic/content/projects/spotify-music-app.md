@@ -4,9 +4,9 @@ status: "published"
 author:
   name: "Achraf Garai"
   picture: ""
-slug: "lofi-music-app"
+slug: "spotify-music-app"
 description: "Process of building a lofi music app with Next.js from design to deployment"
-coverImage: "/images/Spotify-music-app.webp"
+coverImage: "/images/lofi-app-music.webp"
 publishedAt: "2022-03-17T05:35:07.322Z"
 ---
 

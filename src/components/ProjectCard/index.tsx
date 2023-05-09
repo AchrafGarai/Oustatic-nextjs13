@@ -37,7 +37,7 @@ function ProjectCard({
         </div>
       </div>
       <div className={cn(s.cardInfo)}>
-        <h2 className="text-5xl" style={DrukWide.style}>
+        <h2 className={cn(s.cardHeading)} style={DrukWide.style}>
           {project.title}
         </h2>
         <p>{project.description}</p>

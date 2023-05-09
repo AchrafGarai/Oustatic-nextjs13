@@ -24,3 +24,29 @@ p {
 blockquote {
   @apply italic my-4 p-4 border-l;
 }
+
+.planet {
+  animation: floatL 100s infinite;
+}
+
+.planetR {
+  animation: floatR 100s infinite;
+}
+
+@keyframes floatL {
+  0% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes floatR {
+  0% {
+    transform: translate(50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(50%, -50%) rotate(360deg);
+  }
+}

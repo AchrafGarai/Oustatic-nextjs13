@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="relative overflow-hidden">
           <Navbar />
-          <div className="mx-auto max-w-7xl">{children}</div>
+          <div className="mx-auto max-w-7xl p-5">{children}</div>
           <Footer />
           <HeroGraphics />
         </div>

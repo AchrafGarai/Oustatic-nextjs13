@@ -1,12 +1,12 @@
 ---
-title: "Building Spotify clone with Next.Js"
+title: "Lofi music app with Next.Js"
 status: "published"
 author:
   name: "Achraf Garai"
   picture: ""
-slug: "lofi-music-app"
+slug: "lofi-app-music"
 description: "Process of building a lofi music app with Next.js from design to deployment"
-coverImage: "/images/Spotify-music-app"
+coverImage: "/images/Spotify-music-app.webp"
 publishedAt: "2022-03-17T05:35:07.322Z"
 ---
 
