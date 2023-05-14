@@ -14,7 +14,7 @@ export default async function Home() {
   ]) as unknown as Project[];
 
   return (
-    <main className="p-8">
+    <main className="p-0 md:p-3">
       <Hero projects={allPosts} />
       <div className={cn(s.root)}>
         {allPosts.map((project) => (

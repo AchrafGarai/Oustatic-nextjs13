@@ -60,7 +60,10 @@ async function Projectpage({ params }: { params: { slug: string } }) {
         </div>
       )}
       <div className=" flex flex-col gap-8 mt-20 mx-auto max-w-3xl">
-        <h1 className="text-6xl font-bold mb-4" style={DrukWide.style}>
+        <h1
+          className="text-3xl font-bold mb-4 md:text-6xl"
+          style={DrukWide.style}
+        >
           {project.title}
         </h1>
         <p>{project.description}</p>
